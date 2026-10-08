@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required minlength="3">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+
+        <br><br>
+
+        <p>Experience Level:</p>
+
+        <input type="radio" id="beginner" name="experience" value="beginner" required>
+        <label for="beginner">Beginner</label>
+
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+
+        <input type="radio" id="advanced" name="experience" value="advanced">
+        <label for="advanced">Advanced</label>
+
+        <br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="jordan">Jordan</option>
+            <option value="saudi-arabia">Saudi Arabia</option>
+            <option value="uae">United Arab Emirates</option>
+            <option value="qatar">Qatar</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required minlength="10"></textarea>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
